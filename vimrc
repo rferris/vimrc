@@ -35,3 +35,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 " Close window if only NERDTree is open
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"---------------------
+" Backup and swap
+set backup
+set backupdir=~/.vim/private/bup
+set dir=~/.vim/private/swp
